@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Let the leads come unto me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+            height: 100vh;
+        }
+        .slide {
+            height: 100vh;
+            width: 100vw;
+            scroll-snap-align: start;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5vw;
+            position: relative;
+            overflow: hidden;
+        }
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .slide-content {
+            max-width: 900px;
+            text-align: center;
+        }
+        .slide-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            margin-bottom: 2rem;
+            background-color: #1a1a1a;
+        }
+        .slide-text {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            font-weight: 300;
+            opacity: 0.8;
+        }
+        .slide-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .voice-over {
+            font-style: italic;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            max-width: 800px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 1.5rem;
+            z-index: 100;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1rem;
+            font-size: 1rem;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+        header a:hover {
+            opacity: 1;
+        }
+        header a.active {
+            opacity: 1;
+            font-weight: bold;
+        }
+        @media (min-width: 768px) {
+            .slide-title {
+                font-size: 4rem;
+            }
+            .slide-text {
+                font-size: 1.5rem;
+            }
+             .voice-over {
+                font-size: 2rem;
+            }
+        }
+        /* Cursor animation */
+        .typing::after {
+            content: '|';
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            from, to { opacity: 1 }
+            50% { opacity: 0 }
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Switcher -->
+    <header>
+        <a href="index.html">ES</a>
+        <a href="index_en.html" class="active">EN</a>
+    </header>
+
+    <!-- Slide 1: Title -->
+    <section class="slide">
+        <div class="slide-content">
+            <h1 class="title-font text-5xl md:text-8xl typing">Let the leads come unto me.</h1>
+        </div>
+    </section>
+
+    <!-- Slide 2: The Challenge -->
+    <section class="slide">
+        <div class="slide-content">
+            <h2 class="slide-title title-font">THE CHALLENGE: Fear.</h2>
+            <img src="caso1.jpg" alt="Stressed CFO in dark office" class="slide-image">
+            <p class="voice-over">"In B2B marketing, the enemy isn't the competition. It's fear. A fear the industry feeds with pressure, noise, and empty promises."</p>
+        </div>
+    </section>
+
+    <!-- Slide 3: The Insight -->
+    <section class="slide">
+        <div class="slide-content">
+            <h2 class="slide-title title-font">THE INSIGHT: The Loneliness of Power.</h2>
+            <img src="caso2.jpg" alt="Close-up on CEO's eyes reflecting screen" class="slide-image">
+            <p class="voice-over">"A CFO can't ask, 'what if I screw this up?'. A CEO can't admit they don't understand a term. The real fear is the humiliation of a bad decision. Of looking foolish when you're supposed to be infallible."</p>
+        </div>
+    </section>
+
+    <!-- Slide 4: The Idea -->
+    <section class="slide">
+        <div class="slide-content">
+            <img src="caso3.jpg" alt="A matchstick igniting" class="slide-image">
+            <h2 class="slide-title title-font">We decided to commit a heresy: <br>We stopped selling.</h2>
+            <p class="slide-text text-3xl md:text-5xl mt-4">...and built an Oracle.</p>
+            <p class="voice-over">"An anonymous, safe place to kill the greatest fear of all: the fear of asking."</p>
+        </div>
+    </section>
+
+    <!-- Slide 5: The Execution - The Bible -->
+    <section class="slide">
+        <div class="slide-content">
+            <h2 class="slide-title title-font">STEP 1: Write the Knowledge Bible.</h2>
+            <img src="caso4.jpg" alt="Infinite data library" class="slide-image">
+            <p class="voice-over">"First, we created the industry's most exhaustive source of truth. An arsenal of answers for every possible question."</p>
+        </div>
+    </section>
+
+    <!-- Slide 6: The Execution - The Brain -->
+    <section class="slide">
+        <div class="slide-content">
+            <h2 class="slide-title title-font">STEP 2: Give it an AI Brain.</h2>
+            <img src="caso5.jpg" alt="Crystalline brain formed by light" class="slide-image">
+            <p class="voice-over">"Then, we gave knowledge a life. A consultant that doesn't sleep, doesn't judge, and doesn't have a commission in mind."</p>
+        </div>
+    </section>
+
+    <!-- Slide 7: The Execution - The Cathedral -->
+    <section class="slide">
+        <div class="slide-content">
+            <h2 class="slide-title title-font">STEP 3: Build the Digital Cathedral.</h2>
+            <img src="caso6.jpg" alt="Minimalist sanctuary with search bar" class="slide-image">
+            <p class="voice-over">"And finally, we created a digital sanctuary. A place designed for calm and clarity, not for sales."</p>
+        </div>
+    </section>
+
+    <!-- Slide 8: The Results - Recognition -->
+    <section class="slide">
+        <div class="slide-content">
+            <h2 class="slide-title title-font">RESULT: Instant Recognition.</h2>
+            <img src="caso7.jpg" alt="Map of Chile as a constellation" class="slide-image">
+            <p class="voice-over">"The impact was immediate. In 60 days, we were on the map. Google acknowledged our authority."</p>
+        </div>
+    </section>
+
+    <!-- Slide 9: The Results - Source of Truth -->
+    <section class="slide">
+        <div class="slide-content">
+            <h2 class="slide-title title-font">RESULT: The Reference of the Reference.</h2>
+            <img src="caso8.jpg" alt="River of light entering sphere (AI)" class="slide-image">
+            <p class="voice-over">"But the real milestone was this: Google's own AI began to use our Oracle as a source of truth."</p>
+        </div>
+    </section>
+
+    <!-- Slide 10: The Results - Magnetism -->
+    <section class="slide">
+        <div class="slide-content">
+            <h2 class="slide-title title-font">RESULT: Organic Magnetism.</h2>
+            <img src="caso9.jpg" alt="Blue moths attracted to light" class="slide-image">
+            <p class="voice-over">"The attraction model was validated. The right customers, with the right problems, began to arrive. On their own."</p>
+        </div>
+    </section>
+
+    <!-- Slide 11: The Results - Intelligence -->
+    <section class="slide">
+        <div class="slide-content">
+            <h2 class="slide-title title-font">RESULT: On-Demand Market Intelligence.</h2>
+            <img src="caso10.jpg" alt="Notes with questions on obsidian table" class="slide-image">
+            <p class="voice-over">"The Oracle became a confessional, giving us a real-time map of the industry's pain points."</p>
+        </div>
+    </section>
+
+    <!-- Slide 12: Conclusion -->
+    <section class="slide">
+        <div class="slide-content">
+            <h2 class="slide-title title-font text-4xl md:text-7xl">Fear is fought with only one thing: <br>truth.</h2>
+            <p class="voice-over">"We stopped chasing customers... and started creating believers."</p>
+        </div>
+    </section>
+
+</body>
+</html>
