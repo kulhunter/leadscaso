@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caso: Dejad que los Leads Vengan a Mí</title>
+    <title>Caso: Dejad que los leads vengan a mí</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,6 +62,28 @@
             margin-top: 2rem;
             max-width: 800px;
         }
+        header {
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 1.5rem;
+            z-index: 100;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1rem;
+            font-size: 1rem;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+        header a:hover {
+            opacity: 1;
+        }
+        header a.active {
+            opacity: 1;
+            font-weight: bold;
+        }
         @media (min-width: 768px) {
             .slide-title {
                 font-size: 4rem;
@@ -85,6 +107,11 @@
     </style>
 </head>
 <body>
+    <!-- Selector de Idioma -->
+    <header>
+        <a href="index.html" class="active">ES</a>
+        <a href="index_en.html">EN</a>
+    </header>
 
     <!-- Slide 1: Título -->
     <section class="slide">
@@ -97,16 +124,16 @@
     <section class="slide">
         <div class="slide-content">
             <h2 class="slide-title title-font">THE CHALLENGE: El Miedo.</h2>
-            <img src="https://placehold.co/800x450/000000/333333?text=CFO+estresado+en+oficina+oscura" alt="Collage de notificaciones y estrés laboral" class="slide-image">
+            <img src="caso1.jpg" alt="CFO estresado en oficina oscura" class="slide-image">
             <p class="voice-over">"En el marketing B2B, el enemigo no es la competencia. Es el miedo. Un miedo que la industria alimenta con presión, ruido y promesas vacías."</p>
         </div>
     </section>
 
-    <!-- Slide 3: The Insight (REVISADO) -->
+    <!-- Slide 3: The Insight -->
     <section class="slide">
         <div class="slide-content">
             <h2 class="slide-title title-font">THE INSIGHT: La Soledad del Poder.</h2>
-            <img src="https://placehold.co/800x450/0a0a0a/222222?text=Close-up+a+ojos+de+CEO+reflejando+pantalla" alt="Persona concentrada en una habitación oscura" class="slide-image">
+            <img src="caso2.jpg" alt="Close-up a ojos de CEO reflejando pantalla" class="slide-image">
             <p class="voice-over">"Un CFO no puede preguntar '¿y si la cago?'. Un CEO no puede admitir que no entiende un término. El verdadero miedo es a la humillación de una mala decisión. A parecer estúpido cuando se supone que eres infalible."</p>
         </div>
     </section>
@@ -114,7 +141,7 @@
     <!-- Slide 4: The Idea -->
     <section class="slide">
         <div class="slide-content">
-            <img src="https://placehold.co/800x450/000000/555555?text=Cerilla+encendi%C3%A9ndose+en+la+oscuridad" alt="Cerilla encendiéndose" class="slide-image">
+            <img src="caso3.jpg" alt="Cerilla encendiéndose en la oscuridad" class="slide-image">
             <h2 class="slide-title title-font">Decidimos cometer una herejía: <br>Dejamos de vender.</h2>
             <p class="slide-text text-3xl md:text-5xl mt-4">...y construimos un Oráculo.</p>
             <p class="voice-over">"Un lugar anónimo y seguro para matar el miedo más grande de todos: el miedo a preguntar."</p>
@@ -125,7 +152,7 @@
     <section class="slide">
         <div class="slide-content">
             <h2 class="slide-title title-font">PASO 1: Escribir la Biblia del Conocimiento.</h2>
-            <img src="https://placehold.co/800x450/111111/444444?text=Biblioteca+infinita+de+datos" alt="Animación de planos y código" class="slide-image">
+            <img src="caso4.jpg" alt="Biblioteca infinita de datos" class="slide-image">
             <p class="voice-over">"Primero, creamos la fuente de verdad más exhaustiva de la industria. Un arsenal de respuestas para cada posible duda."</p>
         </div>
     </section>
@@ -134,7 +161,7 @@
     <section class="slide">
         <div class="slide-content">
             <h2 class="slide-title title-font">PASO 2: Darle un Cerebro de IA.</h2>
-            <img src="https://placehold.co/800x450/050505/333333?text=Cerebro+cristalino+formado+por+luz" alt="Cerebro hecho de circuitos de luz" class="slide-image">
+            <img src="caso5.jpg" alt="Cerebro cristalino formado por luz" class="slide-image">
             <p class="voice-over">"Luego, le dimos vida al conocimiento. Un consultor que no duerme, no juzga y no tiene una comisión en mente."</p>
         </div>
     </section>
@@ -143,8 +170,8 @@
     <section class="slide">
         <div class="slide-content">
             <h2 class="slide-title title-font">PASO 3: Construir la Catedral Digital.</h2>
-            <img src="https://placehold.co/800x450/ffffff/cccccc?text=Santuario+minimalista+con+barra+de+b%C3%BAsqueda" alt="Interfaz del Centro de Conocimiento 2Win" class="slide-image">
-            <p class="voice-over text-black">"Y finalmente, creamos un santuario digital. Un lugar diseñado para la calma y la claridad, no para la venta."</p>
+            <img src="caso6.jpg" alt="Santuario minimalista con barra de búsqueda" class="slide-image">
+            <p class="voice-over">"Y finalmente, creamos un santuario digital. Un lugar diseñado para la calma y la claridad, no para la venta."</p>
         </div>
     </section>
 
@@ -152,7 +179,7 @@
     <section class="slide">
         <div class="slide-content">
             <h2 class="slide-title title-font">RESULTADO: Reconocimiento Instantáneo.</h2>
-            <img src="https://placehold.co/800x450/000000/333333?text=Mapa+de+Chile+como+constelaci%C3%B3n" alt="Mapa de Chile con constelación digital" class="slide-image">
+            <img src="caso7.jpg" alt="Mapa de Chile como constelación" class="slide-image">
             <p class="voice-over">"El impacto fue inmediato. En 60 días, aparecimos en el mapa. Google reconoció nuestra autoridad."</p>
         </div>
     </section>
@@ -161,8 +188,8 @@
     <section class="slide">
         <div class="slide-content">
             <h2 class="slide-title title-font">RESULTADO: La Referencia de la Referencia.</h2>
-            <img src="https://placehold.co/800x450/f0f0f0/aaaaaa?text=R%C3%ADo+de+luz+entrando+en+esfera+(IA)" alt="Respuesta de IA de Google citando a 2win.cl" class="slide-image">
-            <p class="voice-over text-black">"Pero el verdadero hito fue este: la propia IA de Google empezó a usar nuestro Oráculo como fuente de verdad."</p>
+            <img src="caso8.jpg" alt="Río de luz entrando en esfera (IA)" class="slide-image">
+            <p class="voice-over">"Pero el verdadero hito fue este: la propia IA de Google empezó a usar nuestro Oráculo como fuente de verdad."</p>
         </div>
     </section>
 
@@ -170,7 +197,7 @@
     <section class="slide">
         <div class="slide-content">
             <h2 class="slide-title title-font">RESULTADO: Magnetismo Orgánico.</h2>
-            <img src="https://placehold.co/800x450/0a0a0a/2a2a2a?text=Polillas+azules+atra%C3%ADdas+a+la+luz" alt="Partículas de luz atraídas a un núcleo" class="slide-image">
+            <img src="caso9.jpg" alt="Polillas azules atraídas a la luz" class="slide-image">
             <p class="voice-over">"El modelo de atracción fue validado. Los clientes correctos, con los problemas correctos, comenzaron a llegar. Por sí solos."</p>
         </div>
     </section>
@@ -179,7 +206,7 @@
     <section class="slide">
         <div class="slide-content">
             <h2 class="slide-title title-font">RESULTADO: Inteligencia de Mercado a Demanda.</h2>
-            <img src="https://placehold.co/800x450/111111/444444?text=Notas+con+preguntas+en+mesa+de+obsidiana" alt="Nube de palabras con términos de negocio" class="slide-image">
+            <img src="caso10.jpg" alt="Notas con preguntas en mesa de obsidiana" class="slide-image">
             <p class="voice-over">"El Oráculo se convirtió en un confesionario, dándonos un mapa en tiempo real de los dolores de la industria."</p>
         </div>
     </section>
